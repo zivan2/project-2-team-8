@@ -1,29 +1,27 @@
-1. Project 2 Group 8
+# Project 2 Group 8
 
-2. Project Title: Medical Dosage Tracker
+## Project Title: Medical Dosage Tracker
 
-3. Create an app that takes input from a user on current medication.  This may include dosage, medication time, prescribing doctor, side effects, refill time, pickup time, etc.  and send some type of notification to the user for events.
+### Overview
+This app will allow users to take control of their usage of medication. They will be able to store the information about dosage, intake time, side effects, refill time.
 
-4. As a user, I want to track my medication regimen and receive a notification when an event is upcoming.
+### user story
+As A person who takes a lot of medication
+I WANT to keep track of my medication regimen and receive a notification when an event is upcoming
+SO THAT I can be more organized in my life
+I WANT to secure my information under an account with a password
+SO THAT my sensitive information remains secure
 
-5. Required dependencies:
-    -Express
-    -Handlebars
-    -Sequelize
-    -MySQL2
-    
-6. GET and POST routes
+### Technologies used
+1. Express.js
+2. MySQL / sequelize.js
+3. Handlebars.js
+4. [Nodemailer node package](https://nodemailer.com/about/)
 
-7. New package(s) and/or technology
-    -login
-    -notifications
-    -voice interaction???
-
-8. MVC Folder Structure
-
-9. User login to get specific medication information
-
-10. Use DOTENV for super secret secret information
-
-11. Allows for creation of new users and for those users to put in their related medication regimen.  Information can be displayed upon request.
-
+### Tasks
+1. Design overview 
+2. Build backend with barebones frontend
+    1. Create database structure
+    2. Create method for adding data
+    3. Create authentication
+3. Flesh out frontend and polish
