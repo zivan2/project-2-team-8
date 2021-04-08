@@ -3,7 +3,7 @@
 ## Project Title: Medical Dosage Tracker
 
 ### Overview
-This app will allow users to take control of their usage of medication. They will be able to store the information about dosage, intake time, side effects, refill time.
+This app will allow users to take control of their usage of medication. They will be able to store the information about dosage, intake time, side effects, and refill time.  The app will also send a notification using scheduled emailing.
 
 ### user story
 As A person who takes a lot of medication
@@ -16,7 +16,9 @@ SO THAT my sensitive information remains secure
 1. Express.js
 2. MySQL / sequelize.js
 3. Handlebars.js
-4. [Nodemailer node package](https://nodemailer.com/about/)
+4. dotenv
+5. [Nodemailer node package](https://nodemailer.com/about/)
+6. [cron](https://github.com/Cron/Cron)(https://www.npmjs.com/package/cron) -for setting email schedule
 
 ### Tasks
 1. Design overview 
