@@ -28,7 +28,14 @@ Meds.init(
     },
     medRefill: {
       type: DataTypes.BOOLEAN
-    }
+    },
+    user_id: {
+      type: DataTypes.INTEGER,
+      references: {
+        model: 'user',
+        key: 'user_id',
+      },
+    },
   },
   {
     sequelize,
