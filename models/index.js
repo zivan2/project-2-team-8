@@ -11,10 +11,10 @@ const Meds = require('./Meds');
 // });
 
 // Define a User as having many Meds, thus creating a foreign key in the `meds` table
-User.hasMany(Meds, {
-  foreignKey: 'med_id',
-  onDelete: 'CASCADE',
-});
+// User.hasMany(Meds, {
+//   foreignKey: 'med_id',
+//   onDelete: 'CASCADE',
+// });
 
 // The association can also be created from the Meds side
 Meds.belongsTo(User, {
