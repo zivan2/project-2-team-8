@@ -11,5 +11,24 @@
     "mysql2": "^2.2.5",
     "nodemailer": "^6.5.0",
     "sequelize": "^6.6.2"
-  }
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "name": "project-2-team-8",
+  "description": "",
+  "version": "1.0.0",
+  "main": "cron.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zivan2/project-2-team-8.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zivan2/project-2-team-8/issues"
+  },
+  "homepage": "https://github.com/zivan2/project-2-team-8#readme"
 }

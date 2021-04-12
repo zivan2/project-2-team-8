@@ -7,7 +7,7 @@ const medsData = [
     "medRegimen": "take twice daily with food",
     "medLength": "14",
     "sideEffects": "Drowsiness",
-    "medRefill": "False",
+    "medRefill": "false",
     "user_id": "1"
     }
 ]
