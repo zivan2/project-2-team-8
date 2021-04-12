@@ -1,8 +1,0 @@
-[{
-    "medName": "drug",
-    "dosage": "200mg",
-    "medRegimen": "take twice daily with food",
-    "medLength": "14",
-    "sideEffects": "Drowsiness",
-    "medRefill": "False"
-}]
