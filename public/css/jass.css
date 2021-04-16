@@ -21,6 +21,23 @@ body {
   margin: 0;
 }
 
+/* Begin "THE FIX" Styles */
+#app-calendar{
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: reapeat(5, 1fr);
+  height: 100%;
+}
+
+.weekend {
+  color: var(--light-blue);
+}
+
+.selected {
+  background-color: var(--light-blue);
+  color: white;
+}
+
 /**
  * Render the `main` element consistently in IE.
  */

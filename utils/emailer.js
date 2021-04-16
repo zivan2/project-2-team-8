@@ -33,4 +33,4 @@ async function main() {
 
 // main().catch(console.error);
 
-module.exports = main;
+module.exports = {main};

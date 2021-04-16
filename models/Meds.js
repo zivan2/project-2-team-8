@@ -11,22 +11,22 @@ Meds.init(
       primaryKey: true,
       autoIncrement: true
     },
-    medName: {
+    name: {
       type: DataTypes.STRING
     },
     dosage: {
       type: DataTypes.STRING
     },
-    medRegimen: {
+    regimen: {
       type: DataTypes.STRING
     },
-    medLength: {
+    length: {
       type: DataTypes.INTEGER
     },
-    sideEffects: {
+    side_effects: {
       type: DataTypes.STRING
     },
-    medRefill: {
+    refill: {
       type: DataTypes.BOOLEAN
     },
     user_id: {
