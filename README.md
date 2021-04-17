@@ -33,7 +33,7 @@ Examples of how to use this program:
 
 A user sets up a profile or logs in from the Login/New User page.  The user is then taken to a form that is used to fill in medication-related information.  This information can include the medication name, prescribed dosage and times, length of regimen, refill information, any known side-effects, etc., and is then placed into a database that can only be accessed by the user.
 
-The medications and their details are displayed for easy reference on the user's profile page.  An option to set up an email reminder is available.  Using Nodemailer, an email is sent to the user with a reminder for dosage times, medication refills, etc.
+The medications and their details are displayed for easy reference on the user's profile page.  An option to set up an email reminder is available.  Using Nodemailer, an email is sent to the user with a reminder for dosage times, medication refills, etc, controlling the timing of the emails is the node schedule package.
 
 ## Screenshots
 ![Example screenshot](./images/login.png)
