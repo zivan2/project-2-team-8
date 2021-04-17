@@ -1,5 +1,5 @@
 
-# Get Your Fix 
+# Get Your Fix [Link](https://get-your-fix.herokuapp.com/)
     
 ## Description
     The project is an application that allows a user to login, input medication information, and set up reminders.  The purpose is to provide a tool to assist the user in following and maintaining a prescribed medications regimen.
