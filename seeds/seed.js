@@ -9,8 +9,7 @@ const seedDatabase = async () => {
   await userData();
   await medsData()
 
-  process.exit(0);
 };
 
-seedDatabase();
+module.exports = seedDatabase
 

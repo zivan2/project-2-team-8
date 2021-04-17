@@ -29,6 +29,12 @@ Meds.init(
     refill: {
       type: DataTypes.BOOLEAN
     },
+    remind_days: {
+      type: DataTypes.STRING
+    },
+    remind_time: {
+      type: DataTypes.STRING
+    },
     user_id: {
       type: DataTypes.INTEGER,
       references: {
