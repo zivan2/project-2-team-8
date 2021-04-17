@@ -3,7 +3,7 @@
 ## Project Title: Medical Dosage Tracker
 
 ### Overview
-This app will allow users to take control of their usage of medication. They will be able to store the information about dosage, intake time, side effects, and refill time.  The app will also send a notification using scheduled emailing.
+This application sets out to give its users a powerful tool packaged in a simple and easy to use interface that allows enables them to stay organized and updated with all of their different medications. The users will be able to log into a secure application and store information about the different medications, drug names, dosages, and instructions, and then receive handy email reminders that keep them from losing track of anything ever again.
 
 ### user story
 As A person who takes a lot of medication
