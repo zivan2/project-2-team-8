@@ -9,7 +9,7 @@ const medsData = [
         side_effects: "Drowsiness",
         refill: "false",
         remind_days: '146',
-        remind_time: '5:20',
+        remind_time: '8:50',
         user_id: "1"
     }
 ]

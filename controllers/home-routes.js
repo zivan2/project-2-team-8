@@ -38,6 +38,8 @@ router.get('/userprofile', withAuth, async (req, res) => {
                 },
           attributes: { exclude: ['password'] }
         })
+        console.log(req.session)
+        console.log(userData)
         const user = userData.get({ plain: true });
 
         // Get all Meds and JOIN with user data
