@@ -12,6 +12,9 @@ router.get('/', async (req, res) => {
 
 router.get('/logout', async (req, res) => {
     try {
+        req.session.save(() => {
+            req.session.logged_in = false
+        })
         res.render('landing')
     } catch (err) {
         res.status(500).json(err);
@@ -20,9 +23,9 @@ router.get('/logout', async (req, res) => {
 
 router.get('/signup', async(req, res) => {
     try {
-        res.render('signup')
+        res.render('signup') 
     } catch (err) {
-        res.status(500).json(err);
+        res.status(500).json(err)
     }
 })
 
@@ -51,6 +54,12 @@ router.get('/userprofile', withAuth, async (req, res) => {
     }
 });
 
-
+router.get('/addmedication', withAuth, async (req, res) => {
+    try {
+        res.render('add-medication')
+    } catch (err) {
+        res.status(500).json(err)
+    }
+})
 
 module.exports = router;

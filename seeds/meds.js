@@ -8,24 +8,8 @@ const medsData = [
         length: "14",
         side_effects: "Drowsiness",
         refill: "false",
-        user_id: "1"
-    },
-    {
-        name: "drug2",
-        dosage: "200mg",
-        regimen: "take twice daily with food",
-        length: "15",
-        side_effects: "Drowsiness",
-        refill: "false",
-        user_id: "1"
-    },
-    {
-        name: "drug3",
-        dosage: "200mg",
-        regimen: "take twice daily with food",
-        length: "16",
-        side_effects: "Drowsiness",
-        refill: "false",
+        remind_days: '146',
+        remind_time: '5:20',
         user_id: "1"
     }
 ]
