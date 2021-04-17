@@ -55,11 +55,6 @@ sequelize.sync({ force: true }).then(async () => {
   app.listen(PORT, () => console.log(`Server listening on: http://localhost: ${PORT}`));
 });
 
-(async () => {
-  await sequelize.sync({force: true})
-  await seed()
-})
-
 const rule = new schedule.RecurrenceRule()
 rule.minute = schedule.Range(0, 50, 10)
 const emailJob = schedule.scheduleJob(rule, async (fireDate) => {
