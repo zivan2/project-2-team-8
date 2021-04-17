@@ -57,7 +57,7 @@ sequelize.sync({ force: true }).then(async () => {
 
 const rule = new schedule.RecurrenceRule()
 rule.minute = schedule.Range(0, 50, 10)
-const emailJob = schedule.scheduleJob(rule, async (fireDate) => {
+const emailJob = schedule.scheduleJob('*/10 * * * *', async (fireDate) => {
   console.log(fireDate)
   let users = await User.findAll({
     attributes: ['user_id', 'email']
@@ -81,6 +81,7 @@ const emailJob = schedule.scheduleJob(rule, async (fireDate) => {
       // console.log(Math.floor(fireDate.getMinutes() / 10) * 10)
       // console.log(minute)
       // console.log(time)
+      console.log(days.includes(fireDate.getDay().toString()) && (hour == fireDate.getHours()) && (minute == (Math.floor(fireDate.getMinutes() / 10) * 10)))
       if (
         days.includes(fireDate.getDay().toString()) && (hour == fireDate.getHours()) && (minute == (Math.floor(fireDate.getMinutes() / 10) * 10))
       ) {
