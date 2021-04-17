@@ -20,7 +20,7 @@ let signupFormHandler = async (event) => {
           }
         }
 
-      let response = await fetch('/api/medication', {
+      let response = await fetch('/api/medication/add', {
         method: 'POST',
         body: JSON.stringify({
             name,
@@ -35,7 +35,7 @@ let signupFormHandler = async (event) => {
         headers: { 'Content-Type': 'application/json' },
       });
       if (!response.ok) {
-          alert('invalid input')
+          alert(response.statusText)
       } else {
         alert('successfully added medication!')
       }

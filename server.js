@@ -35,12 +35,9 @@ let transporter = nodemailer.createTransport({
   secure: false,
   auth: {
     user: 'noreply.medication.reminder@gmail.com',
-    pass: 'pRgNaENxGQxP',
+    pass: process.env.EMAIL_PASSWORD,
   },
 })
-
-const rule = new schedule.RecurrenceRule()
-rule.minute = schedule.Range(0, 50, 10)
 
 app.use(session(sess));
 
@@ -62,6 +59,9 @@ sequelize.sync({ force: true }).then(async () => {
   await sequelize.sync({force: true})
   await seed()
 })
+
+const rule = new schedule.RecurrenceRule()
+rule.minute = schedule.Range(0, 50, 10)
 const emailJob = schedule.scheduleJob(rule, async (fireDate) => {
   console.log(fireDate)
   let users = await User.findAll({
