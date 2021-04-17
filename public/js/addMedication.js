@@ -38,6 +38,7 @@ let signupFormHandler = async (event) => {
           alert(response.statusText)
       } else {
         alert('successfully added medication!')
+        document.location.replace('/userprofile')
       }
     } else {
       alert('invalid input')
