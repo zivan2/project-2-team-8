@@ -18,9 +18,13 @@ router.get('/logout', async (req, res) => {
     }
 })
 
-// router.get('/landing', async(req, res) => {
-
-// })
+router.get('/signup', async(req, res) => {
+    try {
+        res.render('signup') 
+    } catch (err) {
+        res.status(500).json(err)
+    }
+})
 
 router.get('/userprofile', withAuth, async (req, res) => {
     try {
